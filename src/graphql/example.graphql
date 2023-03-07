@@ -1,0 +1,11 @@
+query ExampleQuery($first: Int) {
+  topProducts(first: $first) {
+    name
+    reviews {
+      author {
+        id
+        name
+      }
+    }
+  }
+}
